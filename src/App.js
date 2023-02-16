@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+// importamos el contexto
+import UserContext from './context/UserContext';
 import './App.css';
+import MoreInfo from './components/MoreInfo';
 
 function App() {
+  const userData = {
+    name: 'Patricia',
+    lastName: 'García',
+    years: 38,
+    city: 'Zaragoza',
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // le paso los datos al contexto en su prop de valor
+    <UserContext.Provider value={userData}>
+      <div className='App'>
+        <h1>useContext</h1>
+        <MoreInfo />
+      </div>
+    </UserContext.Provider>
   );
 }
 
