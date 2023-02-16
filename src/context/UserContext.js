@@ -5,7 +5,7 @@ const UserContext = createContext({
   // inicializamos el contexto con varios datos
   name: null,
   lastName: null,
-  years: null,
+  years: 15,
   city: null,
 });
 

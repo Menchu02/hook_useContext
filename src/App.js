@@ -1,7 +1,7 @@
 // importamos el contexto
 import UserContext from './context/UserContext';
 import './App.css';
-import MoreInfo from './components/MoreInfo';
+import Hijo from './components/Hijo';
 
 function App() {
   const userData = {
@@ -14,8 +14,7 @@ function App() {
     // le paso los datos al contexto en su prop de valor
     <UserContext.Provider value={userData}>
       <div className='App'>
-        <h1>useContext</h1>
-        <MoreInfo />
+        <Hijo />
       </div>
     </UserContext.Provider>
   );
