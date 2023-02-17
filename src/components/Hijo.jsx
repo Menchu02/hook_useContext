@@ -1,10 +1,10 @@
 import React from 'react';
-import MoreInfo from './MoreInfo';
+import Nieto from './Nieto';
 
 export default function Hijo() {
   return (
     <div>
-      <MoreInfo />
+      <Nieto />
     </div>
   );
 }
