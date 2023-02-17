@@ -1,7 +1,7 @@
 import React from 'react';
 import MoreInfo from './MoreInfo';
 
-export default function Nieto() {
+export default function Hijo() {
   return (
     <div>
       <MoreInfo />
